@@ -1,0 +1,29 @@
+<div>
+    <div class="row">
+        <div class="col-sm-10">
+                <h1>Toppings</h1>
+        </div>
+    <div class="col-sm-2 btn-container">
+            <button class="btn btn-success" routerLink="/addTopping" data-toggle="Add Topping">
+                <span class='glyphicon glyphicon-plus'></span>
+            </button>
+    </div>
+</div>
+
+    <div *ngIf="!toppins">
+        <span>The toppings List is empty</span>
+    </div>
+    <div *ngIf="toppins">
+
+            <div class="table-responsive">
+                    <table class="table">
+                      <tr *ngFor="let toppin of toppins">
+                          <td>{{toppin.name}}</td>
+                          <td><button class="btn btn-danger" (click)="deleteTopping(toppin.id)" data-toggle="Delete">
+                            <span class='glyphicon glyphicon-remove-sign'></span>
+                        </button></td>
+                          </tr>
+                    </table>
+                  </div>
+    </div>
+</div>

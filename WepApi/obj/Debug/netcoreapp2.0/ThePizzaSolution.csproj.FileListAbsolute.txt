@@ -1,0 +1,11 @@
+C:\Users\arturo.aguilar\source\repos\ThePizzaSolution\ThePizzaSolution\bin\Debug\netcoreapp2.0\ThePizzaSolution.deps.json
+C:\Users\arturo.aguilar\source\repos\ThePizzaSolution\ThePizzaSolution\bin\Debug\netcoreapp2.0\ThePizzaSolution.runtimeconfig.json
+C:\Users\arturo.aguilar\source\repos\ThePizzaSolution\ThePizzaSolution\bin\Debug\netcoreapp2.0\ThePizzaSolution.runtimeconfig.dev.json
+C:\Users\arturo.aguilar\source\repos\ThePizzaSolution\ThePizzaSolution\bin\Debug\netcoreapp2.0\ThePizzaSolution.dll
+C:\Users\arturo.aguilar\source\repos\ThePizzaSolution\ThePizzaSolution\bin\Debug\netcoreapp2.0\ThePizzaSolution.pdb
+C:\Users\arturo.aguilar\source\repos\ThePizzaSolution\ThePizzaSolution\obj\Debug\netcoreapp2.0\ThePizzaSolution.csprojResolveAssemblyReference.cache
+C:\Users\arturo.aguilar\source\repos\ThePizzaSolution\ThePizzaSolution\obj\Debug\netcoreapp2.0\ThePizzaSolution.csproj.CoreCompileInputs.cache
+C:\Users\arturo.aguilar\source\repos\ThePizzaSolution\ThePizzaSolution\obj\Debug\netcoreapp2.0\ThePizzaSolution.AssemblyInfoInputs.cache
+C:\Users\arturo.aguilar\source\repos\ThePizzaSolution\ThePizzaSolution\obj\Debug\netcoreapp2.0\ThePizzaSolution.AssemblyInfo.cs
+C:\Users\arturo.aguilar\source\repos\ThePizzaSolution\ThePizzaSolution\obj\Debug\netcoreapp2.0\ThePizzaSolution.dll
+C:\Users\arturo.aguilar\source\repos\ThePizzaSolution\ThePizzaSolution\obj\Debug\netcoreapp2.0\ThePizzaSolution.pdb

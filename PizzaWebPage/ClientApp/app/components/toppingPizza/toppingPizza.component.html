@@ -1,0 +1,46 @@
+<div>
+    <div class="row">
+        <div class="col-sm-10">
+            <h1>Add topping to Pizza</h1>
+        </div>
+    </div>
+
+    <div *ngIf="!toppins">
+        <span>The toppings List is empty</span>
+    </div>
+
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3>Pizza: {{ pizza.name}}</h3>
+        </div>
+        <div class="panel-body">
+
+            <div *ngIf="toppins">
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>
+                                    Select
+                                </th>
+                                <th>
+                                    Topping
+                                </th>
+                            </tr>
+                        </thead>
+                        <tr *ngFor="let topping of toppins">
+                            <td>
+                                <input type="checkbox" [(ngModel)]="topping.selected" />
+                            </td>
+                            <td>{{topping.name}}</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div>
+            <button class="btn btn-info" (click)="save()" >Save</button>
+        </div>
+</div>
