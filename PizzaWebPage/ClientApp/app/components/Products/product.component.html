@@ -1,0 +1,67 @@
+<div>
+    <div class="row">
+        <div class="col-sm-10">
+            <h1 class="">Pizza List</h1>
+        </div>
+        <div class="col-sm-2 add-pizza-container">
+            <button class="btn btn-success" routerLink="/addProduct" data-toggle="Add Pizza">
+                <span class='glyphicon glyphicon-plus'></span>
+            </button>
+        </div>
+    </div>
+    <div *ngIf="!products">
+        <span>The Pizza List is empty</span>
+    </div>
+    <div *ngIf="products">
+
+
+
+        <div class="row" *ngFor="let product of products">
+            <div class="col-sm-6 col-md-4">
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-sm-10">
+                                    <h3>{{ product.name}}</h3>
+                                </div>
+                                <div class="col-sm-2">
+                                    <button class="btn" (click)="deleteProduct(product.id)">
+                                        <span class='glyphicon glyphicon-trash'></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <div *ngIf="product.productToppings">
+                                <div class="row">
+                                    <div class="col-sm-12 toppings-content" >
+                                    <table class="table table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>
+                                                    Toppings
+                                                </th>
+                                                <th class="option-column">
+                                                    <button class="btn btn-warning"
+                                                            [routerLink]="['/toppingPizza', product.id]"
+                                                            data-toggle="Add Topping">
+                                                        <span class='glyphicon glyphicon-edit'></span>
+                                                    </button>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tr *ngFor="let prodTop of product.productToppings">
+                                            <td colspan="2"><span>{{prodTop.topping.name}}</span></td>
+                                        </tr>
+                                    </table>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
